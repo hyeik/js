@@ -4,13 +4,30 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>웹 브라우저 창에 표시하기</title>
+	<title>짝수일까, 홀수일까</title>
+	<style>
+			body {
+				font-size:1.2em;
+				text-align:center;
+			}
+		</style>
 </head>
-<body>	
-	<script>
-	var contents =prompt("내용 입력");
-	document.write(contents);
-	</script>
 
+<body>
+		
+	<h2>짝수일까, 홀수일까</h2>
+
+	<script>
+		var jh = prompt("숫자를 입력하시오.");
+		
+		if(jh % 2 == 0){
+		   document.write(jh + "는 짝수입니다");
+		}
+		else {
+			document.write(jh + "은 홀수입니다");
+		}
+
+	
+	</script>
 </body>
 </html>
